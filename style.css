@@ -64,6 +64,10 @@ body {
     border-bottom: 2px solid var(--very-dark-blue);
 }
 
+.login:hover {
+    border-bottom: 1px solid var(--grayish-blue) !important;
+}
+
 .container {
     padding-left: 10rem;
     min-height: 60vh;
