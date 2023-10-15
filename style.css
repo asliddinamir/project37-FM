@@ -84,10 +84,6 @@ body {
     font-family: var(--barlow-c);
 }
 
-.illustration {
-    background-color: red;
-}
-
 .info_header {
     display: flex;
     align-items: center;
@@ -155,6 +151,16 @@ body {
     cursor: pointer;
 }
 
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: var(--dark-grayish-blue);
+}
+
+footer a {
+    color: var(--red);
+}
+
 @media(min-width:1150px) {
     .illustration {
         transform: translateX(13.8vw);
@@ -166,7 +172,6 @@ body {
     .illustration {
         transform: translateX(17.8vw);
         object-fit: contain;
-        background-color: red;
         z-index: 2;
     }
 }
