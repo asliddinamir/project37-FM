@@ -75,6 +75,10 @@ body {
     display: none;
 }
 
+.close {
+    display: none;
+}
+
 .container {
     padding-left: 10rem;
     min-height: 60vh;
