@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap');
+
+:root {
+    --barlow: 'Barlow', sans-serif;
+    --barlow-c: 'Barlow Condensed', sans-serif;
+    --red: hsl(0, 100%, 68%);
+    --very-dark-blue: hsl(230, 29%, 20%);
+    --dark-grayish-blue: hsl(230, 11%, 40%);
+    --grayish-blue: hsl(231, 7%, 65%);
+    --light-grayish-blue: hsl(207, 33%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    font-family: var(--barlow);
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    font-size: 18px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 10rem;
+    margin-top: 3rem;
+}
+
+.navbar {
+    padding-block: .3rem;
+}
+
+.navbar a {
+    color: var(--very-dark-blue);
+    text-decoration: none;
+    margin-inline: 1.2rem;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: var(--barlow-c);
+    transition: .2s ease;
+}
+
+.login,
+.dot {
+    color: var(--grayish-blue) !important;
+}
+
+.dot {
+    font-size: 25px !important;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid var(--very-dark-blue);
+}
