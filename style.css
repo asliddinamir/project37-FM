@@ -169,9 +169,19 @@ footer a {
 }
 
 @media(max-width:1149px) {
+    .container {
+        padding-left: 5rem;
+        max-width: 1200px;
+    }
+
     .illustration {
-        transform: translateX(17.8vw);
-        object-fit: contain;
+        transform: translateX(-3vw);
+        object-fit: cover;
+        min-width: 800px;
         z-index: 2;
+    }
+
+    .info {
+        min-width: 400px;
     }
 }
