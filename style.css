@@ -131,6 +131,7 @@ body {
     font-family: inherit;
     padding: .8rem 2rem;
     font-size: 18px;
+    border-radius: 5px;
     font-weight: bold;
     text-transform: uppercase;
     transition: .3s ease;
@@ -183,5 +184,49 @@ footer a {
 
     .info {
         min-width: 400px;
+    }
+}
+
+@media(max-width:899px) {
+    .container {
+        flex-direction: column-reverse;
+        padding-left: 0;
+        gap: 2rem;
+    }
+
+    .illustration {
+        transform: translateX(16.8vw);
+        max-width: 500px;
+        min-width: 50px;
+    }
+
+    .info {
+        width: 100%;
+        min-width: 300px;
+        padding-left: 1rem;
+    }
+
+    .info_body {
+        font-size: 40px;
+    }
+}
+
+@media(max-width:393px) {
+    .info_footer {
+        flex-direction: column;
+    }
+
+    .main_btn {
+        width: 140px;
+    }
+
+    .secondary_btn {
+        width: 190px;
+    }
+
+    .main_btn,
+    .secondary_btn {
+        font-size: 14px;
+        padding: .7rem 1rem;
     }
 }
