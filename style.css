@@ -37,6 +37,8 @@ body {
 
 .navbar {
     padding-block: .3rem;
+    display: flex;
+    align-items: center;
 }
 
 .navbar a {
@@ -57,7 +59,8 @@ body {
 }
 
 .dot {
-    font-size: 25px !important;
+    border: 3px solid var(--grayish-blue);
+    border-radius: 50%;
 }
 
 .navbar a:hover {
@@ -66,6 +69,10 @@ body {
 
 .login:hover {
     border-bottom: 1px solid var(--grayish-blue) !important;
+}
+
+.menu {
+    display: none;
 }
 
 .container {
@@ -192,6 +199,44 @@ footer a {
 }
 
 @media(max-width:899px) {
+    .header {
+        padding-inline: 2rem;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar.show-nav {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 100px;
+        transform: translateX(-50%);
+        width: 60%;
+        height: auto;
+        background-color: #fff;
+        z-index: 2;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .dot {
+        border: 1px solid var(--light-grayish-blue);
+        border-radius: 0;
+    }
+
+    .navbar.show-nav a {
+        display: block;
+        margin-block: 1rem;
+        text-align: center;
+        font-size: 19.2px;
+    }
+
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+
     .container {
         flex-direction: column-reverse;
         padding-left: 0;
@@ -202,6 +247,7 @@ footer a {
         transform: translateX(16.8vw);
         max-width: 500px;
         min-width: 50px;
+        z-index: 0;
     }
 
     .info {
@@ -216,6 +262,10 @@ footer a {
 }
 
 @media(max-width:393px) {
+    .navbar.show-nav {
+        width: 85%;
+    }
+
     .info_footer {
         flex-direction: column;
     }
