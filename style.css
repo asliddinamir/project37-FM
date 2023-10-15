@@ -69,8 +69,9 @@ body {
     min-height: 60vh;
     display: flex;
     align-items: center;
+    gap: 0;
     height: auto;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .info {
@@ -79,10 +80,47 @@ body {
     justify-content: space-between;
     gap: 2rem;
     height: 100%;
-    width: 500px;
+    width: 50%;
+    font-family: var(--barlow-c);
 }
 
+.illustration {
+    background-color: red;
+}
 
+.info_header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.info_header h5 {
+    background-color: var(--very-dark-blue);
+    color: #fff;
+    padding: .2rem .6rem;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.info_header span {
+    color: var(--grayish-blue);
+    letter-spacing: 4px;
+    font-size: 15px;
+}
+
+.info_body {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.info p {
+    font-family: var(--barlow);
+    color: var(--dark-grayish-blue);
+    width: 70%;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
 
 @media(min-width:1150px) {
     .illustration {
