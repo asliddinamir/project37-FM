@@ -122,6 +122,39 @@ body {
     line-height: 1.5;
 }
 
+.info_footer {
+    display: flex;
+    gap: 1rem;
+}
+
+.main_btn {
+    cursor: pointer;
+    background-color: var(--red);
+    border: none;
+    color: #fff;
+    font-family: inherit;
+    padding: .8rem 2rem;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .3s ease;
+}
+
+.main_btn:hover {
+    opacity: .7;
+}
+
+.secondary_btn {
+    background: transparent;
+    border: none;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--grayish-blue);
+    font-size: 18px;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
 @media(min-width:1150px) {
     .illustration {
         transform: translateX(13.8vw);
